@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Building Dashboard</title>
+    <link href="bootstrap.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Building Dashboard</h2>
+
+    <!-- Building Info -->
+    <div class="card p-3 mb-4">
+        <h4 id="buildingTitle"></h4>
+        <p id="buildingAddress"></p>
+    </div>
+
+    <!-- Add Maintenance Bill -->
+    <div class="card p-3 mb-4">
+        <h5>Add Maintenance Bill</h5>
+        <input type="text" id="billTitle" placeholder="Bill Name" class="form-control mb-2">
+        <input type="number" id="billAmount" placeholder="Amount" class="form-control mb-2">
+        <button onclick="addBill()" class="btn btn-primary">Add Bill</button>
+    </div>
+
+    <!-- Add Fund -->
+    <div class="card p-3 mb-4">
+        <h5>Add Fund</h5>
+        <input type="text" id="fundName" placeholder="Fund Name" class="form-control mb-2">
+        <input type="number" id="fundAmount" placeholder="Amount" class="form-control mb-2">
+        <button onclick="addFund()" class="btn btn-success">Add Fund</button>
+    </div>
+
+    <!-- Show Data -->
+    <div class="card p-3">
+        <h5>All Bills</h5>
+        <ul id="billList"></ul>
+
+        <h5 class="mt-4">All Funds</h5>
+        <ul id="fundList"></ul>
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

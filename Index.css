@@ -1,0 +1,123 @@
+/* Google Fonts - Modern Tech */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background-color: #0d0f12 !important; /* Strict Dark BG */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Big & Professional Login Card */
+.login-card {
+    background-color: #1c1f24 !important;
+    border: 1px solid #333 !important;
+    border-radius: 20px !important;
+    padding: 50px !important; /* Space for Big Look */
+    width: 100%;
+    max-width: 500px; /* Standard Login Width */
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Heading: Stark Gold */
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffcc00 !important;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Labels: Pure White (Clear Readability) */
+.form-label {
+    display: block;
+    text-align: left;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Inputs & Select: Arc Blue Text */
+.form-control, .form-select {
+    background-color: #0d0e10 !important;
+    border: 1px solid #444 !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    color: #00d4ff !important;
+    font-size: 17px !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2) !important;
+    outline: none;
+}
+
+/* Login Button: Stark Gold */
+.btn-stark {
+    background-color: #ffcc00 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    color: #121417 !important;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-stark:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3) !important;
+}
+
+/* Back Button Style */
+.btn-back {
+    color: #ffcc00 !important;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    letter-spacing: 2px;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+    color: #666 !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    color: #00d4ff !important;
+}
+
+/* Dropdown Arrow Color */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300d4ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #4b39b5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.block-title {
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Blocks ka design */
+.block-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0; /* Animation ke liye shuru mein hide */
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease forwards;
+}
+
+.block-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+.block-card h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Animation Keyframes */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

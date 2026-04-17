@@ -1,0 +1,131 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background-color: #0d0f12 !important; /* Strict Dark BG */
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.dashboard-wrapper {
+    max-width: 1200px; /* Bada Width for Table */
+    margin: 0 auto;
+}
+
+/* Big & Premium Card */
+.card {
+    background-color: #1c1f24 !important;
+    border: 1px solid #333 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6) !important;
+}
+
+h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffcc00 !important; /* Stark Gold */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+/* LIVE Badge Animation */
+.badge-live {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff4444;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid #ff4444;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
+
+/* --- Table Styling --- */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #121417 !important;
+    color: #ffcc00 !important; /* Gold Headers */
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px;
+    border: none;
+}
+
+.table tbody td {
+    background-color: #252930 !important; /* Row BG */
+    color: #cccccc;
+    padding: 20px;
+    border: none;
+    font-size: 17px;
+}
+
+/* Vehicle Tag Style */
+.vehicle-tag {
+    background: #0d0e10;
+    border: 1px solid #444;
+    padding: 5px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.time-stamp {
+    color: #00d4ff !important; /* Arc Blue */
+    font-weight: 700;
+}
+
+.block-text {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Row Hover */
+.table tbody tr:hover td {
+    background-color: #2d333b !important;
+    transition: 0.3s;
+}
+
+/* --- Back Button Style --- */
+.btn-back {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #ffcc00;
+    color: #121417;
+    transform: translateX(-5px);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .card { padding: 25px 15px !important; }
+    h4 { font-size: 18px; }
+}

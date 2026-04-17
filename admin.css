@@ -1,0 +1,154 @@
+/* Google Fonts - Modern Tech Style */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Background: Deep Dark */
+body {
+    background-color: #0d0f12 !important;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Full Screen Layout Center */
+.stark-layout {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* The Big Form Box (Equivalent to col-8/9 on desktop) */
+.form-container {
+    background-color: #1c1f24 !important;
+    border: 1px solid #333 !important;
+    border-radius: 20px;
+    padding: 60px !important; /* Space for Big Look */
+    width: 100%;
+    max-width: 650px; /* Bada Width */
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Heading: Stark Gold */
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffcc00 !important;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+}
+
+/* Labels: Pure White & Bold */
+.form-label {
+    display: block;
+    text-align: left;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Big Input Fields - Arc Blue Text */
+.form-control {
+    width: 100%;
+    background-color: #0d0e10 !important;
+    border: 1px solid #444 !important;
+    border-radius: 12px !important;
+    padding: 18px 22px !important; /* Thick padding */
+    color: #00d4ff !important; /* Arc Blue typed text */
+    font-size: 18px !important;
+    margin-bottom: 5px; /* Spacing handled by mb-4 in HTML */
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3) !important;
+    background-color: #121417 !important;
+}
+
+/* Main Button: Solid Gold */
+.btn-stark {
+    background-color: #ffcc00 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    color: #121417 !important;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-stark:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.4) !important;
+}
+
+/* Back Button: Outline Gold */
+.btn-back {
+    display: block;
+    background-color: transparent !important;
+    border: 2px solid #ffcc00 !important;
+    color: #ffcc00 !important;
+    padding: 15px !important;
+    border-radius: 12px !important;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: rgba(255, 204, 0, 0.1) !important;
+    transform: translateX(-5px);
+    color: #ffffff !important;
+}
+
+/* Dashboard Button: Subtle Grey/Outline */
+.btn-outline-stark {
+    display: block;
+    border: 1px solid #555 !important;
+    color: #888 !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-stark:hover {
+    color: #ffcc00 !important;
+    border-color: #ffcc00 !important;
+}
+
+/* Placeholder visibility */
+::placeholder {
+    color: #444 !important;
+    font-size: 15px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .form-container {
+        padding: 30px 20px !important;
+    }
+    h2 { font-size: 24px; }
+}
