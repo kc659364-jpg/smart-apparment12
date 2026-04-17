@@ -2,7 +2,7 @@
 session_start(); // Session sabse pehle start karein
 
 // 1. Database connection
-include("config/db.php"); 
+include("db.php"); 
 
 $error_message = ""; // Error dikhane ke liye variable
 
